@@ -54,7 +54,7 @@ void setup()
   // see if the card is present and can be initialized:
   pinMode(8, OUTPUT);
   if (!SD.begin(8)) {
-    Serial.println("Card failed, or not present");
+    Serial.println("Card failed, or not present. Try formatting your card.");
     // don't do anything more:
     return;
   }
